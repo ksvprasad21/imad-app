@@ -7,11 +7,11 @@ element.innerHTML="NEW VALUE";
 var marginRight = 0;
 function moveLeft(){
     
-    marginRight+=10;
+    marginRight+=5;
     
     image.style.marginRight = marginRight + "px";
 }
 
 image.onclick = function() {
-    var interval = setInterval(moveLeft,10);
+    var interval = setInterval(moveLeft,50);
 };
