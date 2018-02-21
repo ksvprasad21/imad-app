@@ -17,8 +17,8 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/focusonwork',function (req, res){
-    res.send("siva....don't get diverted");
+app.get('/ui/main.js',function (req, res){
+    res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 
