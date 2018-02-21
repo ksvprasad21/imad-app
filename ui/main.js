@@ -4,8 +4,10 @@ var element = document.getElementById("text");
 var image = document.getElementById("madi");
 
 element.innerHTML="NEW VALUE";
-var marginRight = 10;
+var marginRight = 0;
 function moveLeft(){
+    
+    marginRight+=10;
     
     image.style.marginRight = marginRight + "px";
 }
