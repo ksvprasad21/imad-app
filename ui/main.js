@@ -21,3 +21,34 @@ buton.onclick=function(){
    request.open('GET',"http://sivavaraprasad97.imad.hasura-app.io/counter",'true');
    request.send(null);
 };
+
+var submit=document.getElementById("submit_btn");
+submit.onclick=function(){
+    
+    var request = new XMLHttpRequest();
+    request.onreadystatechange=function(){
+        if(request.readyState=== XMLHttpRequest.DONE){
+            if(request.status===200)
+            {
+                var names=request.responseText;
+                names=JSON.parse(list);
+                var list='';
+                for(var i=0;i<4;i++){
+                    list+='<li>'+names[i]+'</li>';
+                }
+                var ul=document.getElementById("list");
+                ul.innerHTML=list;
+            }
+        }
+    };
+    //render counter value in correct span
+   var input=document.getElementById("nameinput");
+   var inputvalue = input.value;
+   request.open('GET',"http://sivavaraprasad97.imad.hasura-app.io/submit-name/inputvalue",'true');
+   request.send(null);
+};
+    
+    
+    
+
+
