@@ -128,9 +128,11 @@ var names=['name1','name2','name3','name4'];
 var submit=document.getElementById("submit_btn");
 submit.onclick=function(){
 var ul=document.getElementById("list");
+var list='';
 for(var i=0;i<4;i++){
-    ul+='<li>'+names[i]+'</li>';
+    list+='<li>'+names[i]+'</li>';
 }
+ul.innerHTML=list;
 
 };
 
