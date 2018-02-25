@@ -129,7 +129,7 @@ var ul;
 for(var i=0;i<4;i++){
     ul+='<li>'+names[i]+'</li>';
 }
-app.get()
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
