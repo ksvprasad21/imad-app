@@ -7,6 +7,6 @@ var counter=0;
 buton.onclick=function(){
     //render counter value in correct span
     counter+=1;
-    var span =document.getElemntById("count");
+    var span =document.getElementById("count");
     span.innerHTML=counter.toString();
 };
