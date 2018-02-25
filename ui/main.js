@@ -44,7 +44,7 @@ submit.onclick=function(){
     //render counter value in correct span
    var input=document.getElementById("nameinput");
    var inputvalue = input.value;
-   request.open('GET',"http://sivavaraprasad97.imad.hasura-app.io/submit-name/:inputvalue",'true');
+   request.open('GET',"http://sivavaraprasad97.imad.hasura-app.io/submit-name/"+inputvalue,'true');
    request.send(null);
 };
     
