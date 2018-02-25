@@ -131,6 +131,7 @@ var ul=document.getElementById("list");
 for(var i=0;i<4;i++){
     ul+='<li>'+names[i]+'</li>';
 }
+
 };
 
 
