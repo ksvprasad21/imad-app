@@ -124,17 +124,7 @@ app.get('/ui/article.html', function (req,res) {
 app.get('/ui/main.js',function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-var names=['name1','name2','name3','name4'];
-var submit=document.getElementById("submit_btn");
-submit.onclick=function(){
-var ul=document.getElementById("list");
-var list='';
-for(var i=0;i<4;i++){
-    list+='<li>'+names[i]+'</li>';
-}
-ul.innerHTML=list;
 
-};
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
