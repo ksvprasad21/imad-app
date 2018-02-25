@@ -23,5 +23,12 @@ body {
 .container{
     max-width:800px;
     margin:0 auto;
+    font-family:sans-serif;
+    background-color:lightgrey;
+    padding-top:3%;
     
+}
+     
+a{
+   text-decoration: none;
 }
