@@ -97,9 +97,6 @@ return html_template;
 
 }
 
-
-
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -127,7 +124,12 @@ app.get('/ui/article.html', function (req,res) {
 app.get('/ui/main.js',function (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
+var names=['name1','name2','name3','name4'];
+var ul;
+for(var i=0;i<4;i++){
+    ul+='<li>'+names[i]+'</li>';
+}
+app.get()
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
