@@ -34,7 +34,7 @@ submit.onclick=function(){
                 names=JSON.parse(names);
                 var list='';
                 for(var i=0;i<names.length;i++){
-                    list+='<li>'+'Date:'+Date()+':'+names[i]+'</li>';
+                    list+='<li>'+'Date:'+Date()+'<br>'+names[i]+'</li>';
                 }
                 var ul=document.getElementById("list");
                 ul.innerHTML=list;
