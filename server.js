@@ -99,7 +99,7 @@ return html_template;
 }
 
 function hash(input,salt){
-    var hashed=crypto.pbkdf25Sync(input,salt,10000,64,'sha512');
+    var hashed=crypto.pbkdf2Sync(input,salt,10000,64,'sha512');
     return hashed.toString();
 }
 
