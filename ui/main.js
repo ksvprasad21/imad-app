@@ -31,10 +31,11 @@ submit.onclick=function(){
             if(request.status===200)
             {
                 var names=request.responseText;
+                var date=Date().toLocaleDateString("en-US");
                 names=JSON.parse(names);
                 var list='';
                 for(var i=0;i<names.length;i++){
-                    list+='<li>'+'Date:'+Date().toLocaleDateString("en-US")+'<br>'+names[i]+'</li>';
+                    list+='<li>'+'Date:'+date+'<br>'+names[i]+'</li>';
                 }
                 var ul=document.getElementById("list");
                 ul.innerHTML=list;
